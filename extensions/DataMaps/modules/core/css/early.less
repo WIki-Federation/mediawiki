@@ -1,0 +1,21 @@
+@import 'mediawiki.skin.variables.less';
+
+.ext-datamaps-container {
+    box-shadow: 0 0 8px #0003;
+}
+
+.ext-datamaps-container-content {
+    .ext-datamaps-container-leaflet {
+        position: relative;
+        height: 70vh;
+        min-height: 750px;
+        background: #ddd;
+
+        @media screen and ( max-height: 900px ) {
+            height: 75vh;
+            min-height: 300px;
+        }
+    }
+}
+
+@import './components/Status.less';

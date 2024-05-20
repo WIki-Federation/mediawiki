@@ -1,0 +1,10 @@
+/i18n/
+/node_modules/
+/vendor/
+/modules/vendor/
+/package.json
+/package-lock.json
+/composer.json
+/composer.lock
+*.json
+*.d.ts

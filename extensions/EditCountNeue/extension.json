@@ -1,0 +1,61 @@
+{
+	"name": "EditCountNeue",
+	"version": "0.4.3",
+	"author": [
+		"NekoCharm"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:EditCountNeue",
+	"descriptionmsg": "editcountneue-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"EditCount": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"EditCountAlias": "EditCount.i18n.alias.php",
+		"EditCountMagic": "EditCount.i18n.magic.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\EditCount\\": "src/"
+	},
+	"ServiceWiringFiles":[
+		"src/ServiceWiring.php"
+	],
+	"APIListModules": {
+		"editcount": {
+			"class": "MediaWiki\\Extension\\EditCount\\Api\\ApiQueryEditCount",
+			"services": [
+				"EditCountNeue.EditCountQuery"
+			]
+		}
+	},
+	"SpecialPages": {
+		"EditCount": {
+			"class": "MediaWiki\\Extension\\EditCount\\SpecialEditCount",
+			"services": [
+				"EditCountNeue.EditCountQuery",
+				"LanguageConverterFactory",
+				"UserIdentityLookup"
+			]
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "handleHooks"
+	},
+	"HookHandlers": {
+		"handleHooks": {
+			"class": "MediaWiki\\Extension\\EditCount\\Hooks",
+			"services": [
+				"EditCountNeue.EditCountQuery",
+				"UserIdentityLookup"
+			]
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,23 @@
+.leaflet-interactionWarning-pane {
+    position: absolute;
+    z-index: 990;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: none;
+    background: #383939d4;
+    color: #fff;
+    font-size: 2.3em;
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+    transition: opacity @transition-duration-base;
+
+    &[ data-active='true' ] {
+        opacity: 0.9;
+    }
+}

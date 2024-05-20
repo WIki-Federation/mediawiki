@@ -1,0 +1,102 @@
+@popup-width: 290px;
+@popup-padding--vertical: 15px;
+@popup-padding--horizontal: 16px;
+@popup-min-edge-spacing: 1px;
+
+.ext-datamaps-popup-buttons {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    display: flex;
+    border: 0;
+    background: transparent;
+    font: 16px/24px 'Tahoma', 'Verdana', sans-serif;
+    text-align: center;
+
+    a {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-position: center 6px;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        opacity: 0.7;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}
+
+.ext-datamaps-popup-header {
+    .ext-datamaps-popup-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    .ext-datamaps-popup-subtitle {
+        display: block;
+        color: #757575;
+        font-size: 0.96em;
+        font-weight: 500;
+        line-height: 1.15;
+    }
+
+    .ext-datamaps-popup-location {
+        color: #757575;
+    }
+}
+
+.ext-datamaps-popup {
+    .ext-datamaps-popup-image-container {
+        @margin: calc( -1 * @popup-padding--horizontal + @popup-min-edge-spacing );
+        margin: 8px @margin 0 @margin;
+
+        &:last-child {
+            margin-bottom: -12px;
+        }
+
+        img {
+            display: block;
+            max-width: calc( @popup-width - @popup-min-edge-spacing * 2 );
+            margin: 0 auto;
+        }
+    }
+
+    .ext-datamaps-popup-description {
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 0.3em 0 0 1em;
+
+            & + .ext-datamaps-popup-image-container {
+                margin-top: 0.5em;
+            }
+        }
+    }
+
+    .ext-datamaps-popup-tools {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8px -2px -7px;
+        gap: 0.5em;
+        list-style: none;
+
+        li {
+            padding: 0.2em 0.5em;
+            border: 1px solid #7776;
+            border-radius: 4px;
+            margin-bottom: 0;
+            transition: background @transition-duration-base;
+
+            &:hover {
+                border-radius: 2px;
+                background: #a0a7aa54;
+            }
+        }
+    }
+}

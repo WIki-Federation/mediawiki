@@ -1,0 +1,98 @@
+{
+    "@metadata": {
+        "authors": [
+            "alex4401"
+        ]
+    },
+
+    "datamap-ve-to-load": "Please wait while the visual editor is being loaded...",
+    "datamap-ve-cannot-edit-mixins": "Mix-ins are currently not supported by the visual editor.",
+    "datamap-ve-error-cannot-open-validation-errors": "<b>Visual editor is unavailable due to errors in map's source code:</b><br/>$1",
+    "datamap-ve-needs-fallback-to-source": "This map page cannot be edited with the visual editor. Please use the [$1 source editor] instead.",
+
+    "datamap-ve-experimental": "Map visual editor is still experimental",
+    "datamap-ve-experimental-content": "<p>You may opt out at any moment via your MediaWiki user preferences in the <i>Editing</i> section.</p>\n<p>Be aware some functionality may be unavailable, and bugs may occur - for a list or to make a report, visit <a class=\"external\" href=\"https://github.com/alex4401/mediawiki-extensions-DataMaps/issues/149\">issue #149 on DataMaps GitHub repository</a>.</p>",
+    "datamap-ve-experimental-close": "Close",
+
+    "datamap-userpref-enable-ve": "Enable the visual editor for data maps when it's stable",
+    "datamap-userpref-enable-ve-beta": "Opt me into the map visual editor tests",
+    "datamap-ve-edit-source-action": "Edit source",
+    "datamap-ve-beta-notice": "This visual editor is in an early development stage. Please report issues on <a href=\"https://github.com/alex4401/mediawiki-extensions-DataMaps/issues/new\" class=\"external\">GitHub</a>.",
+    "datamap-ve-limited-preview-notice": "Certain features are not available when previewing the map in the visual editor.",
+    "tag-datamaps-visualeditor": "Visual map edit",
+    "tag-datamaps-visualeditor-description": "Edit made using the DataMaps visual editor",
+
+    "datamap-ve-field-locked-unknown-value": "This property is set to a value currently unsupported by this visual editor. Source editor is required to modify it.",
+    "datamap-ve-background-default-name": "Untitled",
+
+    "datamap-ve-generic-cancel": "Cancel",
+
+    "datamap-ve-panel-msettings": "Settings",
+    "datamap-ve-panel-msettings-field-coordorder": "Coordinate system",
+    "datamap-ve-panel-msettings-field-coordorder-latlon": "Latitude then longitude",
+    "datamap-ve-panel-msettings-field-coordorder-xy": "X then Y",
+    "datamap-ve-panel-msettings-field-crs": "Coordinate space",
+    "datamap-ve-panel-msettings-set-view": "Viewing",
+    "datamap-ve-panel-msettings-set-view-desc": "These settings affect only the viewing experience. Currently, some of them are not supported in the visual editor.",
+    "datamap-ve-panel-msettings-field-search": "Marker search",
+    "datamap-ve-panel-msettings-field-search-disabled": "Disabled",
+    "datamap-ve-panel-msettings-field-search-enabled": "Enabled (within only this map)",
+    "datamap-ve-panel-msettings-field-search-tabber": "Enabled (within the entire tabber)",
+    "datamap-ve-panel-msettings-field-legend": "Hide map legend and visibility controls",
+    "datamap-ve-panel-msettings-field-sortchecklists": "Collectible checklist sorting",
+    "datamap-ve-panel-msettings-field-sortchecklists-default": "Follow group definition order",
+    "datamap-ve-panel-msettings-field-sortchecklists-amount": "By amount of markers listed",
+    "datamap-ve-panel-msettings-field-coordinates": "Display coordinates in bottom-left corner",
+    "datamap-ve-panel-msettings-field-allowfullscreen": "Show a button to enter fullscreen",
+    "datamap-ve-panel-msettings-field-popupbehaviour": "Marker detail popup behaviour",
+    "datamap-ve-panel-msettings-field-popupbehaviour-click": "Show on click",
+    "datamap-ve-panel-msettings-field-popupbehaviour-tooltip": "Show like a tooltip (when mouse cursor over)",
+    "datamap-ve-panel-msettings-field-backdrop-colour": "Backdrop colour",
+    "datamap-ve-panel-msettings-set-edit": "Editor",
+    "datamap-ve-panel-msettings-field-requireids": "Require explicit marker IDs",
+    "datamap-ve-panel-msettings-field-requireids-desc": "Marker IDs are used for permanent marker links and the collectibles feature. By default, IDs are generated automatically from assigned layers and location.",
+
+    "datamap-ve-panel-mgroups": "Groups",
+
+    "datamap-ve-panel-mcats": "Categories",
+
+    "datamap-ve-workflow-marker": "Marker",
+    "datamap-ve-workflow-marker-create": "Create",
+    "datamap-ve-workflow-marker-edit": "Save",
+    "datamap-ve-workflow-marker-delete": "Delete this marker permanently (cannot undo)",
+    "datamap-ve-workflow-marker-panel-setup": "On map",
+    "datamap-ve-workflow-marker-set-coordinates": "Placement",
+    "datamap-ve-workflow-marker-field-x": "X",
+    "datamap-ve-workflow-marker-field-lon": "Longitude",
+    "datamap-ve-workflow-marker-field-y": "Y",
+    "datamap-ve-workflow-marker-field-lat": "Latitude",
+    "datamap-ve-workflow-marker-set-association": "[PH] Layer assignment",
+    "datamap-ve-workflow-marker-field-group": "Group",
+    "datamap-ve-workflow-marker-field-group-desc": "Every marker must belong to a marker group, which primarily decide how their markers will be displayed on the map. Groups are also used as the main way to control visibility - which the viewer can do through the filters panel.",
+    "datamap-ve-workflow-marker-field-categories": "Categories",
+    "datamap-ve-workflow-marker-field-categories-disabled": "You cannot add categories to a marker when no categories exist.",
+    "datamap-ve-workflow-marker-field-background": "Visible only on background",
+    "datamap-ve-workflow-marker-field-background-disabled": "This requires more than one background.",
+    "datamap-ve-workflow-marker-set-behaviour": "Permanent links",
+    "datamap-ve-workflow-marker-field-id": "Unique identifier",
+    "datamap-ve-workflow-marker-field-id-desc": "This will be generated automatically per the map's settings.",
+    "datamap-ve-workflow-marker-panel-popup": "Popup information",
+    "datamap-ve-workflow-marker-field-name": "Title",
+    "datamap-ve-workflow-marker-field-desc": "Description",
+    "datamap-ve-workflow-marker-field-image": "Image thumbnail",
+    "datamap-ve-workflow-marker-field-article": "Link to article",
+    "datamap-ve-workflow-marker-field-article-label": "Link label",
+    "datamap-ve-workflow-marker-panel-search": "When searched",
+
+    "datamap-ve-workflow-save": "Save your changes",
+    "datamap-ve-workflow-save-submit": "Publish changes",
+    "datamap-ve-workflow-save-summary": "Edit summary",
+    "datamap-ve-workflow-save-summary-desc": "Describe what you changed",
+
+    "datamap-ve-group-id": "[PH] Unique identifier",
+    "datamap-ve-group-id-cannot-modify": "[PH] Currently renaming groups is not supported in the visual editor",
+    "datamap-ve-group-article-link": "[PH] Default link to article",
+    "datamap-ve-group-article-link-subtext": "[PH] This can be overridden on individual markers.",
+    "datamap-ve-group-collectible-mode": "[PH] Collectible type",
+    "datamap-ve-group-confirm-delete": "[PH] Are you sure you want to permanently destroy marker group $1? This action is irreversible."
+}

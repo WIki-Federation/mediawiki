@@ -1,0 +1,85 @@
+.ext-datamaps-container-legend {
+    display: grid;
+    width: 27em;
+    height: 100%;
+    align-content: start;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax( 0, min-content );
+
+    @media screen and ( max-width: @width-breakpoint-mobile ) {
+        width: 100%;
+    }
+
+    .oo-ui-buttonGroupWidget {
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .oo-ui-checkboxInputWidget {
+        line-height: 18px;
+    }
+
+    .oo-ui-labelElement-label {
+        vertical-align: middle;
+    }
+
+    /* GH#195: Buttons in a group can overlap popups invoked by buttons */
+    .oo-ui-buttonGroupWidget .oo-ui-buttonElement {
+        z-index: unset;
+    }
+}
+
+.ext-datamaps-control-expandable {
+    display: flex;
+    max-height: 30px;
+    flex-direction: column;
+
+    &[ aria-expanded='true' ] {
+        background: #fffb;
+    }
+
+    > button > .oo-ui-iconElement {
+        float: right;
+        transform: scale( 70% );
+    }
+
+    .ext-datamaps-control-expandable-content {
+        display: none;
+        min-height: 0;
+
+        > .oo-ui-menuLayout {
+            > .oo-ui-menuLayout-content {
+                flex-grow: 1;
+                padding: 8px;
+                overflow-y: auto;
+
+                > .oo-ui-stackLayout > .oo-ui-panelLayout {
+                    padding: 0;
+                }
+            }
+
+            &,
+            > .oo-ui-menuLayout-content,
+            > .oo-ui-menuLayout-content > .oo-ui-stackLayout {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+            }
+
+            .oo-ui-tabOptionWidget {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &[ aria-expanded='true' ] {
+        min-height: 0;
+        max-height: unset;
+
+        .ext-datamaps-control-expandable-content {
+            display: block;
+        }
+    }
+}
